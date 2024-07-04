@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
-def home(request):
-    return render(request, 'studentportal/home.html')
+def dashboard(request):
+    return render(request, 'studentportal/student_dash.html')

@@ -13,7 +13,7 @@ body {
 .navigation {
     width: 17%;
     padding: 0 15px;
-    background:#002453; 
+    background: #073b75; 
     overflow-y: auto;
 }
 
@@ -77,7 +77,7 @@ body {
 }
 
 .collar {
-    background: #002a61;
+    background: #09478e;
     display: flex;
     justify-content: space-between;
     align-items: center;
