@@ -34,6 +34,7 @@ body {
     justify-content: center;
     color: #004b8d;
     height: 100%;
+    user-select: none;
 }
 
 .inst-add h3, .inst-add h5 {
@@ -113,4 +114,9 @@ button:hover {
 
 ::placeholder {
     color: #002939;
+}
+
+.display-error {
+    color: #be0000;
+    font-weight: 500;
 }
