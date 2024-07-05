@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background: #e6f0f8;
 }
 
 .container {
@@ -91,20 +92,20 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-right: 10px;
+    
 }
 
 .collar {
-    background: #002a61;
+    background: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60px;
     user-select: none;
-    margin: 10px 0 0 10px;
+    margin: 10px;
     border-radius: 10px;
-    color: #f0f0ff;
-    box-shadow: 0 2px 6px #a8a2ca;
+    color: #3b3b93;
+    box-shadow: 0 2px 6px #8580a1;
 }
 
 .left-sec {
@@ -126,24 +127,39 @@ body {
     font-weight:600;
 }
 
-.content {
-    width: 98%;
-    margin: 10px 0 0 20px;
+.content-out {
+    margin-left: 20px;
     padding-bottom: 20px;
     flex: 1 1 auto; 
     overflow-y: auto; 
     overflow-x: auto;
 }
 
+.content-out h3,
+.content-out h4 {
+    color: #002072;
+}
+
+.content {
+    width: 95%;
+    margin: 10px 20px;
+    padding-bottom: 20px;
+    flex: 1 1 auto; 
+    overflow-y: auto; 
+    overflow-x: auto;
+    font-weight: 600;
+    color: #30537d;
+}
+
 .display-table {
-    width: 98%;
+    width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
     font-size: 16px;
 }
 
 .display-table th {
-    border: 2px solid #cccccc;
+    border: 2px solid #eee;
     padding: 5px;
     text-align: center;
     background-color: #238226;
@@ -151,11 +167,12 @@ body {
 }
 
 td {
-    border: 2px solid #cccccc;
+    border: 2px solid #eee;
     padding: 5px;
     text-align: center;
-    background-color: #929292;
+    background-color: #cfcfcf;
     color: #404040;
+    font-weight: 500;
 }
 
 td .edit-button {
@@ -166,7 +183,7 @@ td .edit-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:#008040;
+    background-color:#004080;
 }
 
 .edit-button a {
@@ -177,7 +194,7 @@ td .edit-button {
 
 .delete-button button {
     cursor: pointer;
-    background-color: #6500a9;
+    background-color: #4d0080;
     color: #ddd;
     height: 26px;
     font-size: 1em;
