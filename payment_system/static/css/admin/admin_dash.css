@@ -36,6 +36,7 @@ body {
     display: flex;
     align-items: center;
     margin: 10px 0;
+    cursor: pointer;
 }
 
 .nav-row img {
@@ -49,7 +50,7 @@ body {
     color: #e0e7ff; 
     text-decoration: none;
     padding: 13px 0 13px 10px;
-    font-size: 1.1em;
+    font-size: 18px;
     margin-left: 0;
     width: 100%;
 }
@@ -65,8 +66,25 @@ body {
     filter: invert(22%) sepia(61%) saturate(1785%) hue-rotate(191deg) brightness(93%) contrast(98%);
 }
 
-.nav-row:hover a {
+.nav-row:hover a,
+.nav-row:hover .logout-btn{
     color: #354a81;
+}
+
+.nav-row .logout {
+    width: 100%;
+}
+
+.logout-btn {
+    background: none;
+    border: none;
+    margin-left: 5px;
+    font-size: 18px;
+    color: #e0e7ff; 
+    height: 45px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
 }
 
 .out-nav {
@@ -109,57 +127,57 @@ body {
 }
 
 .content {
-    width: 100%;
-    margin: 10px 10px 0;
+    width: 98%;
+    margin: 10px 0 0 20px;
+    padding-bottom: 20px;
     flex: 1 1 auto; 
     overflow-y: auto; 
     overflow-x: auto;
 }
 
 .display-table {
-    width: 100%;
+    width: 98%;
     border-collapse: collapse;
     margin-top: 20px;
-    
     font-size: 16px;
 }
 
 .display-table th {
-    border: 2px solid #ffffff88;
+    border: 2px solid #cccccc;
     padding: 5px;
     text-align: center;
-    background-color: #4a4a4ab7;
+    background-color: #238226;
     color: #ddd;
 }
 
-.display-table td {
-    border: 2px solid #ffffff88;
+td {
+    border: 2px solid #cccccc;
     padding: 5px;
     text-align: center;
-    background-color: #282828b7;
-    color: #ddd;
+    background-color: #929292;
+    color: #404040;
 }
 
 td .edit-button {
     height: 26px;
-    padding: 0 10px;
     border-radius: 2px;
     cursor: pointer;
     font-size: 1em;
     display: flex;
     align-items: center;
-    background-color:#006942;
-    
+    justify-content: center;
+    background-color:#008040;
 }
 
 .edit-button a {
+    width: 100%;
     text-decoration: none;
     color: #ddd;
 }
 
 .delete-button button {
     cursor: pointer;
-    background-color: #1c3a6f;
+    background-color: #6500a9;
     color: #ddd;
     height: 26px;
     font-size: 1em;
